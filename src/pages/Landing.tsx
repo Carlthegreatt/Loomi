@@ -1,5 +1,11 @@
-import Header from "../components/Header";
+import Header from "../components/sections/Header";
+import Hero from "@/components/sections/Hero";
 
 export default function Landing() {
-  return <Header></Header>;
+  return (
+    <>
+      <Header />
+      <Hero />
+    </>
+  );
 }
