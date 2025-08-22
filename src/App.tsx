@@ -1,9 +1,14 @@
+import Landing from "./pages/Landing";
+import { Routes, Route } from "react-router-dom";
+import Dashboard from "./pages/Dashboard";
+
 export default function App() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-black">
-      <h1 className="text-5xl font-bold text-green-400">
-        Tailwind is working ✅
-      </h1>
+    <div>
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Routes>
     </div>
   );
 }
