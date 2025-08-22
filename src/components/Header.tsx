@@ -2,10 +2,15 @@ import { Button } from "@/components/ui/button";
 
 export default function Header() {
   return (
-    <div className="min-h-10 bg-black flex">
-      <h1 className="text-white">Loomi</h1>
-      <div>
-        <Button variant="outline">Login</Button>
+    <div className="min-h-15 p-2 flex items-center">
+      <div className="mx-20 w-full flex items-center justify-between">
+        <div className="flex items-center">
+          <p>Loomi</p>
+        </div>
+        <div className="flex items-center gap-3">
+          <Button className="bg-white">Login</Button>
+          <Button variant="outline">Sign Up</Button>
+        </div>
       </div>
     </div>
   );
