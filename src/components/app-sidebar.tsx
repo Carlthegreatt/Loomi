@@ -99,7 +99,7 @@ const data = {
     },
 
     {
-      title: "Settings",
+      title: "More Features",
       url: "#",
       icon: "Settings2",
       items: [
