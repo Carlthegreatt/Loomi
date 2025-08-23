@@ -1,4 +1,4 @@
-import LoginPopover from "@/components/LoginPopover";
+import LoginPopover from "@/components/sections/LoginPopover";
 
 export default function Home() {
   return (
