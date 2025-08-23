@@ -40,7 +40,7 @@ export default function LoginModal() {
               <h1 className="text-white text-sm">Password</h1>
               <input
                 type="password"
-                className="w-full bg-[#212121] px-3 py-2 border rounded-md focus:outline-none focus:ring"
+                className="w-full bg-[#212121] px-3 py-2 border rounded-md focus:outline-none "
               />
               <button
                 type="submit"
