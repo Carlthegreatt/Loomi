@@ -31,6 +31,7 @@ export default function LoginModal() {
               Sign in
             </h3>
             <form className="space-y-3">
+              <h1>Email</h1>
               <input
                 type="email"
                 placeholder="m@example.com"
