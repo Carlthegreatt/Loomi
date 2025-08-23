@@ -11,6 +11,7 @@ export default function Hero() {
             Your All-in-One
             <span className="block text-[#286c77]">Student Tracker</span>
           </h1>
+
           {/* Subtitle */}
           <p className="text-lg sm:text-xl text-[#5d969d] mb-8 max-w-2xl mx-auto leading-relaxed">
             Master your academic journey with intelligent tracking for finances,
