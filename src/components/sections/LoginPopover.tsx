@@ -39,7 +39,7 @@ export default function LoginModal() {
               />
               <div className="flex justify-between">
                 <h1 className="text-white text-sm">Password</h1>
-                <button className="text-white text-xs  ">
+                <button className="text-white text-sm  ">
                   Forgot Password?
                 </button>
               </div>
