@@ -46,7 +46,7 @@ const data = {
       isActive: true,
       items: [
         {
-          title: "History",
+          title: "Transaction History",
           url: "#",
         },
         {
