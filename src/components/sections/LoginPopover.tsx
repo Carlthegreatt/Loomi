@@ -37,7 +37,11 @@ export default function LoginModal() {
                 placeholder="m@example.com"
                 className="w-full text-sm bg-[#212121] text-white px-3 py-2 border rounded-md focus:outline-1"
               />
-              <h1 className="text-white text-sm">Password</h1>
+              <div>
+                <h1 className="text-white text-sm">Password</h1>
+                <button>Forgot Passowrd?</button>
+              </div>
+
               <input
                 type="password"
                 className="w-full text-sm bg-[#212121] text-white px-3 py-2 border rounded-md focus:outline-1 "
