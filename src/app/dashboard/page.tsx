@@ -34,7 +34,7 @@ export default function Page() {
           <div className="grid auto-rows-min gap-4 md:grid-cols-3">
             <div className="aspect-video rounded-xl bg-muted/50">
               <div className="items-center flex justify-center font-bold">
-                fdsf
+                20
               </div>
             </div>
             <div className="aspect-video rounded-xl bg-muted/50" />
