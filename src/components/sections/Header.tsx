@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import LoginPopover from "@/components/sections/LoginPopover";
 
 export default function Header() {
   return (
@@ -8,7 +9,7 @@ export default function Header() {
           <p>Loomi</p>
         </div>
         <div className="flex items-center gap-3">
-          <Button className="">Login</Button>
+          <LoginPopover></LoginPopover>
           <Button variant="outline">Sign Up</Button>
         </div>
       </div>
