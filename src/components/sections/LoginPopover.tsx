@@ -37,7 +37,7 @@ export default function LoginModal() {
                 placeholder="m@example.com"
                 className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
-              <h1 className="text-white">Password</h1>
+              <h1 className="text-white text-sm">Password</h1>
               <input
                 type="password"
                 className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
