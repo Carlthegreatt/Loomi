@@ -80,7 +80,7 @@ const data = {
       icon: "BookOpen",
       items: [
         {
-          title: "Introduction",
+          title: "Pomodoro",
           url: "#",
         },
         {
