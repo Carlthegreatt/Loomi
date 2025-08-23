@@ -8,7 +8,7 @@ export default function Header() {
           <p>Loomi</p>
         </div>
         <div className="flex items-center gap-3">
-          <Button className="">Login</Button>
+          <Button className="">Login tdfds</Button>
           <Button variant="outline">Sign Up</Button>
         </div>
       </div>
