@@ -8,7 +8,7 @@ export default function Hero() {
         <div className="max-w-4xl mx-auto text-center">
           {/* Main Heading */}
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#ebe9fc] mb-6 leading-tight">
-            Your All-in-One
+            Loomi Your All-in-One
             <span className="block text-[#286c77]">Student Tracker</span>
           </h1>
 
