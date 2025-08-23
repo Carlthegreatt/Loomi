@@ -21,13 +21,15 @@ export default function LoginModal() {
         <div className="fixed inset-0 z-50 flex items-center justify-center">
           {/* Background overlay */}
           <div
-            className="absolute inset-0 bg-white bg-opacity-60 backdrop-blur-lg"
+            className="absolute inset-0 bg-black bg-opacity-60 backdrop-blur-lg"
             onClick={() => setOpen(false)} // click outside closes
           />
 
           {/* Modal content */}
           <div className="relative bg-black/60 z-10 w-80 rounded-xl p-6 backdrop-blur-sm border-spacing-0">
-            <h3 className="text-lg font-semibold mb-4 text-center">Sign in</h3>
+            <h3 className="text-lg font-semibold mb-4 text-center text-white">
+              Sign in
+            </h3>
             <form className="space-y-3">
               <input
                 type="email"
