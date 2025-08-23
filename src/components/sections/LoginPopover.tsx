@@ -44,7 +44,7 @@ export default function LoginModal() {
               />
               <button
                 type="submit"
-                className="w-full bg-white text-black py-2 rounded-md hover:bg-neutral-600"
+                className="w-full bg-white text-black py-2 rounded-md hover:bg-neutral-400"
               >
                 Sign In
               </button>
