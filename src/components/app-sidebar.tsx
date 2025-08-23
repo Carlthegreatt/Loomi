@@ -75,7 +75,7 @@ const data = {
       ],
     },
     {
-      title: "Documentation",
+      title: "Study",
       url: "#",
       icon: "BookOpen",
       items: [
