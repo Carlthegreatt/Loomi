@@ -40,8 +40,8 @@ export default function Page() {
             <div className="aspect-video rounded-xl bg-muted/50" />
             <div className="aspect-video rounded-xl bg-muted/50" />
           </div>
-          <div className="min-h-[100vh] flex-1 rounded-xl bg-muted/50 md:min-h-min" />
-          <div className="min-h-[100vh] flex rounded-xl bg-muted/50 md:min-h-min" />
+          <div className="min-h-[100vh] flex-2 rounded-xl bg-muted/50 md:min-h-min" />
+          <div className="min-h-[100vh] flex-auto rounded-xl bg-muted/50 md:min-h-min" />
         </div>
       </SidebarInset>
     </SidebarProvider>
