@@ -1,3 +1,3 @@
-export default Login () {
-    return <>fd</>
+export default function Login() {
+  return <div>fd</div>;
 }
