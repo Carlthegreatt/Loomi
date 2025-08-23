@@ -1,3 +1,3 @@
 export default function Login() {
-  return <div className="text-white">fd</div>;
+  return <div className="flex">fd</div>;
 }
