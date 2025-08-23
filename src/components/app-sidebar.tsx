@@ -59,20 +59,6 @@ const data = {
       title: "LoomiAI",
       url: "#",
       icon: "Bot",
-      items: [
-        {
-          title: "Genesis",
-          url: "#",
-        },
-        {
-          title: "Explorer",
-          url: "#",
-        },
-        {
-          title: "Quantum",
-          url: "#",
-        },
-      ],
     },
     {
       title: "Documentation",
