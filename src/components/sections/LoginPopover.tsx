@@ -33,7 +33,7 @@ export default function LoginModal() {
             <form className="space-y-3">
               <input
                 type="email"
-                placeholder="Email"
+                placeholder="m@example.com"
                 className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
               <input
