@@ -42,7 +42,7 @@ export default function Page() {
           </div>
           <div className="grid auto-rows-min gap-4 md:grid-cols-2">
             <div className="aspect-video flex-auto rounded-xl bg-muted/50 md:min-h-min" />
-            <div className="aspect-video flex-auto rounded-xl bg-muted/50 md:min-h-min" />
+            <div className="aspect-video flex-auto rounded-xl bg-#0a2f3c md:min-h-min" />
           </div>
         </div>
       </SidebarInset>
