@@ -40,7 +40,7 @@ export default function Page() {
             <div className="aspect-video rounded-xl bg-muted/50" />
             <div className="aspect-video rounded-xl bg-muted/50" />
           </div>
-          <div className="grid auto-rows-min">
+          <div className="grid auto-rows-min gap-4 md:grid-cols-2">
             <div className="min-h-[100vh] flex-auto rounded-xl bg-muted/50 md:min-h-min" />
             <div className="min-h-[100vh] flex-auto rounded-xl bg-muted/50 md:min-h-min" />
           </div>
