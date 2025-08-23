@@ -26,7 +26,6 @@ export default function Hero() {
               size="lg"
               className="px-8 py-3 text-base font-medium bg-[#286c77] hover:bg-[#286c77]/90 text-[#ebe9fc] border-[#286c77]"
             >
-              Get Started Free
               <ArrowRight className="w-4 h-4" />
             </LoginPopover>
             <Button
