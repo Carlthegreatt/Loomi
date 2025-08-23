@@ -56,7 +56,7 @@ const data = {
       ],
     },
     {
-      title: "Models",
+      title: "LoomiAI",
       url: "#",
       icon: "Bot",
       items: [
