@@ -26,7 +26,7 @@ export default function LoginModal() {
           />
 
           {/* Modal content */}
-          <div className="relative blur-md bg-black/60 z-10 w-80 rounded-xl p-6 backdrop-blur-sm border-spacing-0">
+          <div className="relative bg-black/60 z-10 w-80 rounded-xl p-6 backdrop-blur-sm border-spacing-0">
             <h3 className="text-lg font-semibold mb-4 text-center">Sign in</h3>
             <form className="space-y-3">
               <input
