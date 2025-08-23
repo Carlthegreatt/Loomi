@@ -40,7 +40,7 @@ const data = {
   ],
   navMain: [
     {
-      title: "Playground",
+      title: "Finance",
       url: "#",
       icon: "SquareTerminal",
       isActive: true,
