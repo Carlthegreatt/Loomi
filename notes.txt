@@ -1,0 +1,7 @@
+colors: {
+ 'text': '#ebe9fc',
+ 'background': '#010104',
+ 'primary': '#286c77',
+ 'secondary': '#5d969d',
+ 'accent': '#0a2f3c',
+},
