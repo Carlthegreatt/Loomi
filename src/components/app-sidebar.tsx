@@ -23,7 +23,7 @@ const data = {
   },
   teams: [
     {
-      name: "Acme Inc",
+      name: "Loomi",
       logo: "GalleryVerticalEnd",
       plan: "Enterprise",
     },
@@ -40,21 +40,17 @@ const data = {
   ],
   navMain: [
     {
-      title: "Playground",
+      title: "Finance",
       url: "#",
       icon: "SquareTerminal",
       isActive: true,
       items: [
         {
-          title: "History",
+          title: "Transaction History",
           url: "#",
         },
         {
           title: "Starred",
-          url: "#",
-        },
-        {
-          title: "Settings",
           url: "#",
         },
       ],
@@ -101,6 +97,7 @@ const data = {
         },
       ],
     },
+
     {
       title: "Settings",
       url: "#",
