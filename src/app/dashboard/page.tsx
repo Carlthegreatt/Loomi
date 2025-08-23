@@ -24,7 +24,7 @@ export default function Page() {
           <div className="flex items-center gap-2 px-4">
             <SidebarTrigger className="-ml-1" />
             <Separator orientation="vertical" className="mr-2 h-4" />
-            <Input placeholder="Search" className="h-1"></Input>
+            <Input placeholder="Search" className="h-10"></Input>
           </div>
         </header>
         <div className="flex flex-1 flex-col gap-4 p-4 pt-0">
