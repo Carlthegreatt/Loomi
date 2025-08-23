@@ -39,7 +39,7 @@ export default function LoginModal() {
               />
               <div>
                 <h1 className="text-white text-sm">Password</h1>
-                <button>Forgot Passowrd?</button>
+                <button className="text-white">Forgot Passowrd?</button>
               </div>
 
               <input
