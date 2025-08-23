@@ -53,7 +53,6 @@ const data = {
           title: "Starred",
           url: "#",
         },
-        s,
       ],
     },
     {
