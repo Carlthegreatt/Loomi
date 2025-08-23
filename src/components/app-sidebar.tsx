@@ -88,7 +88,7 @@ const data = {
           url: "#",
         },
         {
-          title: "Tutorials",
+          title: "Schedule",
           url: "#",
         },
         {
