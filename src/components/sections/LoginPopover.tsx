@@ -18,7 +18,7 @@ export default function LoginPopover() {
 
       {/* Popover panel */}
       {open && (
-        <div className="absolute right-0 mt-2 w-64 bg-white border border-gray-200 rounded-xl shadow-lg p-4 z-50">
+        <div className="absolute  mt-2 w-64 bg-white border border-gray-200 rounded-xl shadow-lg p-4 z-50">
           <h3 className="text-lg font-semibold mb-2">Sign in</h3>
           <form className="space-y-3">
             <input
