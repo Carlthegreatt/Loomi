@@ -92,7 +92,7 @@ const data = {
           url: "#",
         },
         {
-          title: "To Do",
+          title: "To Do List",
           url: "#",
         },
       ],
