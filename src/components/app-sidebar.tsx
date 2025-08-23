@@ -84,7 +84,7 @@ const data = {
           url: "#",
         },
         {
-          title: "Get Started",
+          title: "Flashcards",
           url: "#",
         },
         {
