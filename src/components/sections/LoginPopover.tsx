@@ -21,7 +21,7 @@ export default function LoginModal() {
         <div className="fixed inset-0 z-50 flex items-center justify-center">
           {/* Background overlay */}
           <div
-            className="absolute inset-0 bg-black bg-opacity-50"
+            className="absolute inset-0 bg-black bg-opacity-50 blur-md"
             onClick={() => setOpen(false)} // click outside closes
           />
 
