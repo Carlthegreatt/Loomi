@@ -2,6 +2,7 @@
 "use client";
 
 import { useState } from "react";
+import { Button } from "../ui/button";
 
 export default function LoginModal() {
   const [open, setOpen] = useState(false);
@@ -9,12 +10,12 @@ export default function LoginModal() {
   return (
     <>
       {/* Trigger button */}
-      <button
+      <Button
         onClick={() => setOpen(true)}
         className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700"
       >
         Login
-      </button>
+      </Button>
 
       {/* Overlay + Modal */}
       {open && (
