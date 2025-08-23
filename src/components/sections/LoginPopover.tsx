@@ -39,7 +39,7 @@ export default function LoginModal() {
               />
               <div>
                 <h1 className="text-white text-sm">Password</h1>
-                <button className="text-white text-sm grid flex-auto">
+                <button className="text-white text-sm grid flex-auto justify-between">
                   Forgot Passowrd?
                 </button>
               </div>
