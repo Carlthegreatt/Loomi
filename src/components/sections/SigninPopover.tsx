@@ -14,7 +14,7 @@ export default function SigninModal() {
         onClick={() => setOpen(true)}
         className="px-4 py-2 bg-transparent text-white rounded-md hover:bg-neutral-900"
       >
-        Login
+        Signin
       </Button>
 
       {/* Overlay + Modal */}
