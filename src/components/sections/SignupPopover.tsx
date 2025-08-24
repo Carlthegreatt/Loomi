@@ -12,7 +12,7 @@ export default function SignupModal() {
       {/* Trigger button */}
       <Button
         onClick={() => setOpen(true)}
-        className="px-4 py-2 bg-white text-black rounded-md hover:bg-neutral-300"
+        className="px-4 py-2 bg-white text-black rounded-md hover:bg-neutral-400"
       >
         Sign Up
       </Button>
