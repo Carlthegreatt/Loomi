@@ -29,7 +29,7 @@ export default function SignupModal() {
           {/* Modal content */}
           <div className="relative bg-[#171717] z-10 w-96 rounded-xl p-6 backdrop-blur-sm border-spacing-0">
             <h3 className="text-lg font-semibold mb-4 text-center text-white">
-              Sign In
+              Sign I
             </h3>
             <form className="space-y-3">
               <h1 className="text-white text-sm">Email</h1>
