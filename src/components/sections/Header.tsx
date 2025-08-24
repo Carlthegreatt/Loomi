@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import LoginPopover from "@/components/sections/LoginPopover";
+import LoginPopover from "@/components/sections/SigninPopover";
 
 export default function Header() {
   return (
