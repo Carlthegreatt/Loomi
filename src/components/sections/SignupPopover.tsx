@@ -14,7 +14,7 @@ export default function SignupModal() {
         onClick={() => setOpen(true)}
         className="px-4 py-2 bg-white text-black rounded-md hover:bg-neutral-900"
       >
-        Login
+        Sign Up
       </Button>
 
       {/* Overlay + Modal */}
