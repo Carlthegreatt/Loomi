@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import SigninPopover from "@/components/sections/SigninPopover";
-import SignupModal from "./SignupPopover";
+import SignupPopover from "./SignupPopover";
 
 export default function Header() {
   return (
@@ -11,7 +11,7 @@ export default function Header() {
         </div>
         <div className="flex items-center gap-3">
           <SigninPopover></SigninPopover>
-          <Button variant="outline">Sign Up</Button>
+          <SignupPopover></SignupPopover>
         </div>
       </div>
     </header>
