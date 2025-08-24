@@ -4,7 +4,7 @@
 import { useState } from "react";
 import { Button } from "../ui/button";
 
-export default function LoginModal() {
+export default function SigninModal() {
   const [open, setOpen] = useState(false);
 
   return (
