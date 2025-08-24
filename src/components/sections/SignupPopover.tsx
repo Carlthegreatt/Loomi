@@ -26,7 +26,6 @@ export default function SignupModal() {
             onClick={() => setOpen(false)} // click outside closes
           />
 
-          {/* Modal content */}
           <div className="relative bg-[#171717] z-10 w-96 rounded-xl p-6 backdrop-blur-sm border-spacing-0">
             <h3 className="text-lg font-semibold mb-4 text-center text-white">
               Sign Up
