@@ -57,7 +57,7 @@ export default function SignupModal() {
               />
 
               <Checkbox
-                checked={field.value?.includes(item.id)}
+                checked={}
                 onCheckedChange={(checked) => {
                   return checked
                     ? field.onChange([...field.value, item.id])
