@@ -39,7 +39,7 @@ export default function SignupModal() {
               </Button>
             </div>
             <div className="flex justify-center">
-              <h1 className="text-white text-sm">or</h1>
+              <h1 className="text-white text-xs">or</h1>
             </div>
             <form className="space-y-3">
               <h1 className="text-white text-sm">Email</h1>
