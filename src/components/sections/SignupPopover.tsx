@@ -56,7 +56,7 @@ export default function SignupModal() {
                 className="w-full text-sm bg-[#212121] text-white px-3 py-2 border rounded-md focus:outline-1 "
               />
 
-              <Checkbox></Checkbox>
+              <Checkbox>fd</Checkbox>
 
               <button
                 type="submit"
@@ -69,7 +69,7 @@ export default function SignupModal() {
                 <div className="flex items-center gap-4 my-6 mt-7">
                   <div className="flex-grow border-t border-gray-600"></div>
                   <span className="text-gray-400 text-xs ">
-                    Or register with
+                    Or sign up with
                   </span>
                   <div className="flex-grow border-t border-gray-600"></div>
                 </div>
