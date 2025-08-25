@@ -58,8 +58,10 @@ export default function SignupModal() {
               <div className="flex items-center gap-2">
                 <input
                   type="checkbox"
-                  className="h-4 w-3 rounded border-gray-300 text-purple-600 focus:ring-purple-500"
-                ></input>
+                  className="h-3 w-3 rounded border-gray-300 text-purple-600 focus:ring-purple-500"
+                >
+                  fd
+                </input>
                 <label className="text-xs text-white opacity-45">
                   Accept terms and conditions
                 </label>
