@@ -55,7 +55,7 @@ export default function SignupModal() {
                 type="confirm password"
                 className="w-full text-sm bg-[#212121] text-white px-3 py-2 border rounded-md focus:outline-1 "
               />
-              <div className="flex">
+              <div className="flex items-center">
                 <input
                   type="checkbox"
                   className="h-4 w-4 rounded border-gray-300 text-purple-600 focus:ring-purple-500"
