@@ -34,7 +34,9 @@ export default function SignupModal() {
               <Button>
                 <FaGoogle className="h-5 w-5" />
               </Button>
-              <Button>Github</Button>
+              <Button>
+                <FaGithub className="h-5 w-5"></FaGithub>
+              </Button>
             </div>
             <form className="space-y-3">
               <h1 className="text-white text-sm">Email</h1>
