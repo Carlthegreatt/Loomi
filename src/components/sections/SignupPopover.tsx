@@ -55,8 +55,9 @@ export default function SignupModal() {
                 type="confirm password"
                 className="w-full text-sm bg-[#212121] text-white px-3 py-2 border rounded-md focus:outline-1 "
               />
-              <div></div>
-              <input type="checkbox"></input>
+              <div>
+                <input type="checkbox"></input>
+              </div>
 
               <button
                 type="submit"
