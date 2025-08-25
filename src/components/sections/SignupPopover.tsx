@@ -45,7 +45,7 @@ export default function SignupModal() {
 
               <input
                 type="password"
-                className="w-full text-sm bg-[#212121] text-white px-3 py-2 border rounded-md focus:outline-1 focus:ring-purple-500 "
+                className="w-full text-sm bg-[#212121] text-white px-3 py-2 border rounded-md"
               />
               <div className="flex justify-between">
                 <h1 className="text-white text-sm"> Confirm Password</h1>
