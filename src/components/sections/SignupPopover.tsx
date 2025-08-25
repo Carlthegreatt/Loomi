@@ -65,7 +65,7 @@ export default function SignupModal() {
               <div>
                 <div className="flex items-center gap-4 my-6">
                   <div className="flex-grow border-t border-gray-600"></div>
-                  <span className="text-gray-400 text-sm ">
+                  <span className="text-gray-400 text-xs ">
                     Or register with
                   </span>
                   <div className="flex-grow border-t border-gray-600"></div>
