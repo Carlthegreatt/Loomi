@@ -4,6 +4,7 @@
 import { useState } from "react";
 import { Button } from "../ui/button";
 import { FaGoogle, FaGithub } from "react-icons/fa";
+import { Checkbox } from "@radix-ui/react-checkbox";
 
 export default function SignupModal() {
   const [open, setOpen] = useState(false);
