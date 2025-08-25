@@ -31,9 +31,6 @@ export default function SignupModal() {
               Sign Up
             </h3>
 
-            <div className="flex justify-center">
-              <h1 className="text-white text-sm opacity-45">or</h1>
-            </div>
             <form className="space-y-3">
               <h1 className="text-white text-sm">Email</h1>
               <input
@@ -51,6 +48,9 @@ export default function SignupModal() {
               />
               <div className="flex justify-between">
                 <h1 className="text-white text-sm"> Confirm Password</h1>
+              </div>
+              <div className="flex justify-center">
+                <h1 className="text-white text-sm opacity-45">or</h1>
               </div>
 
               <input
