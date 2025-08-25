@@ -57,6 +57,7 @@ export default function SignupModal() {
               />
               <div>
                 <input type="checkbox"></input>
+                <label>Accept terms and conditions</label>
               </div>
 
               <button
