@@ -57,7 +57,7 @@ export default function SignupModal() {
 
               <button
                 type="submit"
-                className="w-full text-sm bg-white m-2 text-black py-2 rounded-md hover:bg-neutral-300"
+                className="w-full text-sm bg-white mt-4 text-black py-2 rounded-md hover:bg-neutral-300"
               >
                 Sign In
               </button>
