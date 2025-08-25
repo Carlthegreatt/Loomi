@@ -80,7 +80,7 @@ export default function SignupModal() {
                 onClick={() => setOpen(false)}
                 className="mt-3 w-full text-sm text-gray-500 hover:underline"
               >
-                Cancel
+                Already have an account?
               </button>
             }
           </div>
