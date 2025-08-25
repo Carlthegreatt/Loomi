@@ -31,7 +31,7 @@ export default function SignupModal() {
               Sign Up
             </h3>
             <div className="flex justify-center">
-              <Button>
+              <Button className="bg-transparent">
                 <FaGoogle className="h-5 w-5" />
               </Button>
               <Button>
