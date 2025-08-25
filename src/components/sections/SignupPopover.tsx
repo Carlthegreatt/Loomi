@@ -38,6 +38,9 @@ export default function SignupModal() {
                 <FaGithub className="h-5 w-5"></FaGithub>
               </Button>
             </div>
+            <div>
+              <h1>or</h1>
+            </div>
             <form className="space-y-3">
               <h1 className="text-white text-sm">Email</h1>
               <input
