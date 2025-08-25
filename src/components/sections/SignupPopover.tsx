@@ -57,6 +57,13 @@ export default function SignupModal() {
               <div className="flex justify-center">
                 <h1 className="text-white text-sm opacity-45">or</h1>
               </div>
+
+              <button
+                type="submit"
+                className="w-full text-sm bg-white text-black py-2 rounded-md hover:bg-neutral-300"
+              >
+                Sign In
+              </button>
               <div className="flex justify-center p-2">
                 <Button className="bg-transparent shadow-none">
                   <FaGoogle className="h-5 w-5" />
@@ -65,12 +72,6 @@ export default function SignupModal() {
                   <FaGithub className="h-5 w-5"></FaGithub>
                 </Button>
               </div>
-              <button
-                type="submit"
-                className="w-full text-sm bg-white text-black py-2 rounded-md hover:bg-neutral-300"
-              >
-                Sign In
-              </button>
             </form>
             <button
               onClick={() => setOpen(false)}
