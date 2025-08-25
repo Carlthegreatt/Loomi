@@ -57,6 +57,9 @@ export default function SignupModal() {
                 type="confirm password"
                 className="w-full text-sm bg-[#212121] text-white px-3 py-2 border rounded-md focus:outline-1 "
               />
+              <div className="flex justify-center">
+                <h1 className="text-white text-sm opacity-45">or</h1>
+              </div>
               <div className="flex justify-center p-2">
                 <Button className="bg-transparent shadow-none">
                   <FaGoogle className="h-5 w-5" />
