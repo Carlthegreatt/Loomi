@@ -53,6 +53,10 @@ export default function SignupModal() {
                 type="password"
                 className="w-full text-sm bg-[#212121] text-white px-3 py-2 border rounded-md focus:outline-1 "
               />
+              <input
+                type="password"
+                className="w-full text-sm bg-[#212121] text-white px-3 py-2 border rounded-md focus:outline-1 "
+              />
               <button
                 type="submit"
                 className="w-full text-sm bg-white text-black py-2 rounded-md hover:bg-neutral-300"
