@@ -34,7 +34,7 @@ export default function SignupModal() {
               <Button className="bg-transparent shadow-none">
                 <FaGoogle className="h-5 w-5" />
               </Button>
-              <Button>
+              <Button className="bg-transparent shadow-none">
                 <FaGithub className="h-5 w-5"></FaGithub>
               </Button>
             </div>
