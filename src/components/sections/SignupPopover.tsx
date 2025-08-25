@@ -30,7 +30,7 @@ export default function SignupModal() {
             <h3 className="text-lg font-semibold mb-4 text-center text-white">
               Sign Up
             </h3>
-            <div className="flex justify-center p-5">
+            <div className="flex justify-center p-2">
               <Button className="bg-transparent shadow-none">
                 <FaGoogle className="h-5 w-5" />
               </Button>
