@@ -56,9 +56,16 @@ export default function SignupModal() {
                 className="w-full text-sm bg-[#212121] text-white px-3 py-2 border rounded-md focus:outline-1 "
               />
 
-              <Checkbox type="fds"></Checkbox>
-
-              <input type="checkbox" id="terms"></input>
+              <Checkbox
+                checked={field.value?.includes(item.id)}
+                onCheckedChange={(checked) => {
+                  return checked
+                    ? field.onChange([...field.value, item.id])
+                    : field.onChange(
+                        field.value?.filter((value) => value !== item.id)
+                      );
+                }}
+              />
               <button
                 type="submit"
                 className="w-full text-sm bg-white text-black py-2 rounded-md hover:bg-neutral-300"
