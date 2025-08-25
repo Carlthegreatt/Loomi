@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import LoginPopover from "@/components/sections/LoginPopover";
+import LoginPopover from "@/components/sections/SigninPopover";
 
 export default function Hero() {
   return (

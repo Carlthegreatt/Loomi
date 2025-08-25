@@ -4,7 +4,7 @@
 import { useState } from "react";
 import { Button } from "../ui/button";
 
-export default function LoginModal() {
+export default function SigninModal() {
   const [open, setOpen] = useState(false);
 
   return (
@@ -14,7 +14,7 @@ export default function LoginModal() {
         onClick={() => setOpen(true)}
         className="px-4 py-2 bg-transparent text-white rounded-md hover:bg-neutral-900"
       >
-        Login
+        Sign In
       </Button>
 
       {/* Overlay + Modal */}
