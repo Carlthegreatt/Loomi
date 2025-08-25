@@ -62,10 +62,8 @@ export default function SignupModal() {
                 Sign In
               </button>
 
-              <div className="flex justify-center">
-                <h1 className="text-white text-sm mt-2 opacity-45 underline">
-                  or
-                </h1>
+              <div className="flex justify-center underline-offset-2">
+                <h1 className="text-white text-sm mt-2 opacity-45">or</h1>
               </div>
 
               <div className="flex justify-center p-2">
