@@ -3,6 +3,7 @@
 
 import { useState } from "react";
 import { Button } from "../ui/button";
+import { FaGoogle, FaGithub } from "react-icons/fa";
 
 export default function SignupModal() {
   const [open, setOpen] = useState(false);
