@@ -31,7 +31,9 @@ export default function SignupModal() {
               Sign Up
             </h3>
             <div className="flex justify-center">
-              <Button>Google</Button>
+              <Button>
+                <FaGoogle className="h-5 w-5" />
+              </Button>
               <Button>Github</Button>
             </div>
             <form className="space-y-3">
