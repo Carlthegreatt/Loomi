@@ -56,7 +56,7 @@ export default function SignupModal() {
                 className="w-full text-sm bg-[#212121] text-white px-3 py-2 border rounded-md focus:outline-1 "
               />
 
-              <input type="checkbox"></input>
+              <input type="checkbox" placeholder="fds"></input>
 
               <button
                 type="submit"
