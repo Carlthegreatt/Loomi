@@ -78,7 +78,7 @@ export default function SignupModal() {
             {
               <button
                 onClick={() => setOpen(false)}
-                className="mt-3 w-full text-sm text-gray-500 hover:underline"
+                className="mt-3 w-full text-xs text-gray-500 hover:underline"
               >
                 Already have an account?
               </button>
