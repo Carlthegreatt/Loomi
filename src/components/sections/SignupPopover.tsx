@@ -75,12 +75,14 @@ export default function SignupModal() {
                 </Button>
               </div>
             </form>
-            <button
-              onClick={() => setOpen(false)}
-              className="mt-3 w-full text-sm text-gray-500 hover:underline"
-            >
-              Cancel
-            </button>
+            {
+              <button
+                onClick={() => setOpen(false)}
+                className="mt-3 w-full text-sm text-gray-500 hover:underline"
+              >
+                Cancel
+              </button>
+            }
           </div>
         </div>
       )}
