@@ -31,12 +31,12 @@ export default function SignupModal() {
               Sign Up
             </h3>
             <div className="flex justify-center">
-              <Button>
+              <button>
                 <FaGoogle className="h-5 w-5" />
-              </Button>
-              <Button>
+              </button>
+              <button>
                 <FaGithub className="h-5 w-5"></FaGithub>
-              </Button>
+              </button>
             </div>
             <form className="space-y-3">
               <h1 className="text-white text-sm">Email</h1>
