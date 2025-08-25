@@ -57,7 +57,7 @@ export default function SignupModal() {
               />
               <div>
                 <input type="checkbox"></input>
-                <label className="text-xs text-white">
+                <label className="text-xs text-white opacity-45">
                   Accept terms and conditions
                 </label>
               </div>
