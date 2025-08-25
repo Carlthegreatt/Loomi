@@ -29,7 +29,7 @@ export default function SignupModal() {
             <h3 className="text-lg font-semibold mb-4 text-center text-white">
               Sign Up
             </h3>
-            <div>dsad</div>
+            <div className="flex justify-center">dsa</div>
             <form className="space-y-3">
               <h1 className="text-white text-sm">Email</h1>
               <input
