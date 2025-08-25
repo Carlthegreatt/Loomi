@@ -72,7 +72,7 @@ export default function SignupModal() {
                 </div>
               </div>
 
-              <div className="flex justify-center p-2">
+              <div className="flex justify-center">
                 <Button className="bg-transparent shadow-none">
                   <FaGoogle className="h-5 w-5" />
                 </Button>
