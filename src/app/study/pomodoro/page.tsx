@@ -1,9 +1,7 @@
 export default function Pomodoro() {
   return (
     <div className="flex justify-center">
-      <div className=" lg:w-[90vh] lg:h-[90vh] sm:w-[90vh]  bg-slate-700">
-        box
-      </div>
+      <div className="w-4/5 max-w-lg   bg-slate-700">box</div>
     </div>
   );
 }
