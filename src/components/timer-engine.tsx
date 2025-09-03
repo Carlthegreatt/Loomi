@@ -32,7 +32,7 @@ export function TimerEngine() {
           duration: Infinity,
         });
         if (next === 0) {
-          toast.success("Time is up!", { id: TOAST_ID });
+          toast.success("Time is up!!", { id: TOAST_ID });
           toast.dismiss(TOAST_ID);
           reset(10);
         }

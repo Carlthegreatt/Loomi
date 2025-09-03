@@ -6,7 +6,7 @@ import { SidebarInset, SidebarTrigger } from "@/components/ui/sidebar";
 import { Search } from "lucide-react";
 import Timer from "@/components/pomodoro";
 
-const Dashboard = () => <div>dash</div>;
+const Dashboard = () => <div>dashdasd</div>;
 const StudyPomodoro = () => (
   <div className="">
     <Timer></Timer>
