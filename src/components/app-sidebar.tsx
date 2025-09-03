@@ -5,7 +5,7 @@ import * as React from "react";
 import NavHome from "./nav-home";
 
 import { NavMain } from "@/components/nav-main";
-import { NavProjects } from "@/components/nav-projects";
+
 import { NavUser } from "@/components/nav-user";
 import { TeamSwitcher } from "@/components/team-switcher";
 import {
@@ -172,11 +172,6 @@ export function AppSidebar({
         />
         <NavMain
           items={data.navMain}
-          activeContent={activeContent}
-          setActiveContent={setActiveContent}
-        />
-        <NavProjects
-          projects={data.projects}
           activeContent={activeContent}
           setActiveContent={setActiveContent}
         />

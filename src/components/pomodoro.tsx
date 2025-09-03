@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import {
   Select,
   SelectContent,
@@ -9,23 +9,22 @@ import {
 } from "@/components/ui/select";
 import { toast } from "sonner";
 import { Upload } from "lucide-react";
+import { useTimerStore } from "@/hooks/user-timer";
+
+const TOAST_ID = "pomodoro";
 
 export default function Timer() {
-  const [timeLeft, setTimeleft] = useState(1500);
+  const timeLeft = useTimerStore((s) => s.timeLeft);
+  const isPaused = useTimerStore((s) => s.isPaused);
+  const togglePaused = useTimerStore((s) => s.togglePaused);
 
-  const [isPaused, setIsPaused] = useState(true);
-
-  const togglePause = () => setIsPaused((prev) => !prev);
-
-  useEffect(() => {
-    if (timeLeft <= 0 || isPaused) return;
-
-    const timerID = setInterval(() => {
-      setTimeleft((prev) => prev - 1);
-    }, 1000);
-
-    return () => clearInterval(timerID);
-  }, [timeLeft, isPaused]);
+  const handleStartPause = () => {
+    togglePaused();
+    if (isPaused) {
+      toast(formatTime(timeLeft), { id: TOAST_ID, duration: Infinity });
+    } else {
+    }
+  };
 
   const formatTime = (totalSeconds: number) => {
     const minutes = Math.floor(totalSeconds / 60);
@@ -34,7 +33,7 @@ export default function Timer() {
   };
 
   return (
-    <div className="flex flex-col justify-center h-screen p-10 items-center gap-7">
+    <div className="flex w-full flex-col mt-10 justify-center p-10 items-center gap-7">
       <div className="w-4/5 flex-none shadow-2xl max-w-lg max-h-[50vh] text-white text-center rounded-2xl bg-slate-700 p-8 flex flex-col items-center gap-6">
         <div className="flex-auto gap-3">
           <Button className="bg-transparent text-white shadow-none hover:bg-slate-800">
@@ -54,10 +53,7 @@ export default function Timer() {
         <div>
           <Button
             className="bg-white text-slate-700 font-bold hover:bg-neutral-200"
-            onClick={() => {
-              togglePause();
-              toast("Time to focus");
-            }}
+            onClick={handleStartPause}
           >
             {isPaused ? "START" : "PAUSE"}
           </Button>
@@ -75,7 +71,7 @@ export default function Timer() {
           </SelectContent>
         </Select>
         <Button>
-          <Upload></Upload>
+          <Upload />
         </Button>
       </div>
     </div>
