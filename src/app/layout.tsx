@@ -35,7 +35,7 @@ export default function RootLayout({
         >
           <TimerEngine></TimerEngine>
           {children}
-          <Toaster position="top-right" />
+          <Toaster position="bottom-right" />
         </ThemeProvider>
       </body>
     </html>

@@ -27,7 +27,10 @@ export function TimerEngine() {
       if (timeLeft > 0) {
         const next = timeLeft - 1;
         setTimeLeft(next);
-        toast(formatTime(next), { id: TOAST_ID, duration: Infinity });
+        toast(`Pomodoro — ${formatTime(next)}`, {
+          id: TOAST_ID,
+          duration: Infinity,
+        });
         if (next === 0) {
           toast.success("Time is up!", { id: TOAST_ID });
           toast.dismiss(TOAST_ID);

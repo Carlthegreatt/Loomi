@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { useEffect } from "react";
 import {
@@ -10,21 +12,12 @@ import {
 import { toast } from "sonner";
 import { Upload } from "lucide-react";
 import { useTimerStore } from "@/hooks/user-timer";
+import { Description } from "@radix-ui/react-dialog";
 
-const TOAST_ID = "pomodoro";
-
-export default function Timer() {
+export default function Pomodoro() {
   const timeLeft = useTimerStore((s) => s.timeLeft);
   const isPaused = useTimerStore((s) => s.isPaused);
   const togglePaused = useTimerStore((s) => s.togglePaused);
-
-  const handleStartPause = () => {
-    togglePaused();
-    if (isPaused) {
-      toast(formatTime(timeLeft), { id: TOAST_ID, duration: Infinity });
-    } else {
-    }
-  };
 
   const formatTime = (totalSeconds: number) => {
     const minutes = Math.floor(totalSeconds / 60);
@@ -53,7 +46,7 @@ export default function Timer() {
         <div>
           <Button
             className="bg-white text-slate-700 font-bold hover:bg-neutral-200"
-            onClick={handleStartPause}
+            onClick={togglePaused}
           >
             {isPaused ? "START" : "PAUSE"}
           </Button>
