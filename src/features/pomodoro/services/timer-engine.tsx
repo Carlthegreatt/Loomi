@@ -2,7 +2,7 @@
 "use client";
 
 import { useEffect } from "react";
-import { useTimerStore } from "@/hooks/user-timer";
+import { useTimerStore } from "@/features/pomodoro/hooks/use-user-timer";
 import { toast } from "sonner";
 
 const TOAST_ID = "pomodoro";

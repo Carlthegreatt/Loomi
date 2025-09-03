@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/select";
 import { toast } from "sonner";
 import { Upload } from "lucide-react";
-import { useTimerStore } from "@/hooks/user-timer";
+import { useTimerStore } from "@/features/pomodoro/hooks/use-user-timer";
 import { Description } from "@radix-ui/react-dialog";
 
 export default function Pomodoro() {

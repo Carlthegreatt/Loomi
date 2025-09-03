@@ -4,10 +4,10 @@ import * as React from "react";
 
 import NavHome from "./nav-home";
 
-import { NavMain } from "@/components/nav-main";
+import { NavMain } from "@/components/shared/nav-main";
 
-import { NavUser } from "@/components/nav-user";
-import { TeamSwitcher } from "@/components/team-switcher";
+import { NavUser } from "@/components/shared/nav-user";
+import { TeamSwitcher } from "@/components/shared/team-switcher";
 import {
   Sidebar,
   SidebarContent,

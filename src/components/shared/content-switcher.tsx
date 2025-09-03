@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
 import { SidebarInset, SidebarTrigger } from "@/components/ui/sidebar";
 import { Search } from "lucide-react";
-import Timer from "@/components/pomodoro";
+import Timer from "@/features/pomodoro/components/Pomodoro";
 
 const Dashboard = () => <div>dashdasd</div>;
 const StudyPomodoro = () => (

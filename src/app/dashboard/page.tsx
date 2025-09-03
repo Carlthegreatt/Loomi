@@ -1,7 +1,7 @@
 "use client";
 
-import { AppSidebar } from "@/components/app-sidebar";
-import { ContentSwitcher } from "@/components/content-switcher";
+import { AppSidebar } from "@/components/shared/app-sidebar";
+import { ContentSwitcher } from "@/components/shared/content-switcher";
 import { SidebarProvider } from "@/components/ui/sidebar";
 import { useState } from "react";
 
