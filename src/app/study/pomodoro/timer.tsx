@@ -8,6 +8,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { toast } from "sonner";
+import { Upload } from "lucide-react";
 
 export default function Timer() {
   const [timeLeft, setTimeleft] = useState(1500);
@@ -34,8 +35,8 @@ export default function Timer() {
 
   return (
     <div className="flex flex-col justify-center h-screen p-10 items-center gap-7">
-      <div className="w-4/5 shadow-2xl max-w-lg max-h-[50vh] text-white text-center rounded-2xl bg-slate-700 p-8 flex flex-col items-center gap-6">
-        <div className="flex gap-3">
+      <div className="w-4/5 flex-none shadow-2xl max-w-lg max-h-[50vh] text-white text-center rounded-2xl bg-slate-700 p-8 flex flex-col items-center gap-6">
+        <div className="flex-auto gap-3">
           <Button className="bg-transparent text-white shadow-none hover:bg-slate-800">
             Pomodoro
           </Button>
@@ -47,7 +48,9 @@ export default function Timer() {
           </Button>
         </div>
 
-        <div className="text-8xl font-semibold">{formatTime(timeLeft)}</div>
+        <div className="xl:text-8xl sm:text-5xl md:text-6xl text-4xl font-bold ">
+          {formatTime(timeLeft)}
+        </div>
         <div>
           <Button
             className="bg-white text-slate-700 font-bold hover:bg-neutral-200"
@@ -60,17 +63,20 @@ export default function Timer() {
           </Button>
         </div>
       </div>
-      <div>
+      <div className="flex gap-4">
         <Select>
           <SelectTrigger className="w-[180px]">
             <SelectValue placeholder="Background Music" />
           </SelectTrigger>
           <SelectContent>
             <SelectItem value="light">White Noise</SelectItem>
-            <SelectItem value="dark">Dark</SelectItem>
-            <SelectItem value="system">System</SelectItem>
+            <SelectItem value="dark">Brown Noise</SelectItem>
+            <SelectItem value="system">Lo Fi</SelectItem>
           </SelectContent>
         </Select>
+        <Button>
+          <Upload></Upload>
+        </Button>
       </div>
     </div>
   );

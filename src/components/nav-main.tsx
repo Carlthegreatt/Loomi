@@ -21,17 +21,21 @@ import {
 
 export function NavMain({
   items,
+  activeContent,
+  setActiveContent,
 }: {
   items: {
     title: string;
-    url: string;
+    contentId: string;
     icon?: string;
     isActive?: boolean;
     items?: {
       title: string;
-      url: string;
+      contentId: string;
     }[];
   }[];
+  activeContent: string;
+  setActiveContent: (content: string) => void;
 }) {
   return (
     <SidebarGroup>
@@ -61,10 +65,10 @@ export function NavMain({
                   <SidebarMenuSub>
                     {item.items?.map((subItem) => (
                       <SidebarMenuSubItem key={subItem.title}>
-                        <SidebarMenuSubButton asChild>
-                          <a href={subItem.url}>
-                            <span>{subItem.title}</span>
-                          </a>
+                        <SidebarMenuSubButton
+                          onClick={() => setActiveContent(subItem.contentId)}
+                        >
+                          <span>{subItem.title}</span>
                         </SidebarMenuSubButton>
                       </SidebarMenuSubItem>
                     ))}

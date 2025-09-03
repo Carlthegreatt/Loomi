@@ -1,51 +1,20 @@
+"use client";
+
 import { AppSidebar } from "@/components/app-sidebar";
-import { Input } from "@/components/ui/input";
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbPage,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
-import { Separator } from "@/components/ui/separator";
-import {
-  SidebarInset,
-  SidebarProvider,
-  SidebarTrigger,
-} from "@/components/ui/sidebar";
-import { Search } from "lucide-react";
+import { ContentSwitcher } from "@/components/content-switcher";
+import { SidebarProvider } from "@/components/ui/sidebar";
+import { useState } from "react";
 
 export default function Page() {
+  const [activeContent, setActiveContent] = useState("dashboard");
+
   return (
     <SidebarProvider>
-      <AppSidebar />
-      <SidebarInset>
-        <header className="flex h-16 shrink-0 items-center gap-2 transition-[width,height] ease-linear group-has-[[data-collapsible=icon]]/sidebar-wrapper:h-12">
-          <div className="flex items-center gap-2 px-4">
-            <SidebarTrigger className="-ml-1" />
-            <Separator orientation="vertical" className="mr-2 h-4" />
-
-            <Input placeholder="Search" className="h-7 text-sm flex"></Input>
-            <Search></Search>
-          </div>
-        </header>
-        <div className="flex flex-1 flex-col gap-4 p-4 pt-0">
-          <div className="grid auto-rows-min gap-4 md:grid-cols-3">
-            <div className="aspect-video rounded-xl bg-muted/50">
-              <div className="items-center flex justify-center font-bold">
-                20
-              </div>
-            </div>
-            <div className="aspect-video rounded-xl bg-muted/50" />
-            <div className="aspect-video rounded-xl bg-[#5d969d]" />
-          </div>
-          <div className="grid auto-rows-min gap-4 md:grid-cols-2">
-            <div className="aspect-video flex-auto rounded-xl bg-muted/50 md:min-h-min" />
-            <div className="aspect-video flex-auto rounded-xl bg-muted/50 md:min-h-min" />
-          </div>
-        </div>
-      </SidebarInset>
+      <AppSidebar
+        activeContent={activeContent}
+        setActiveContent={setActiveContent}
+      />
+      <ContentSwitcher activeContent={activeContent} />
     </SidebarProvider>
   );
 }

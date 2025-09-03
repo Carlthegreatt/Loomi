@@ -20,12 +20,16 @@ import {
 
 export function NavProjects({
   projects,
+  activeContent,
+  setActiveContent,
 }: {
   projects: {
     name: string;
-    url: string;
+    contentId: string;
     icon: string;
   }[];
+  activeContent: string;
+  setActiveContent: (content: string) => void;
 }) {
   const { isMobile } = useSidebar();
 
@@ -38,11 +42,11 @@ export function NavProjects({
 
           return (
             <SidebarMenuItem key={item.name}>
-              <SidebarMenuButton asChild>
-                <a href={item.url}>
-                  <IconComponent />
-                  <span>{item.name}</span>
-                </a>
+              <SidebarMenuButton
+                onClick={() => setActiveContent(item.contentId)}
+              >
+                <IconComponent />
+                <span>{item.name}</span>
               </SidebarMenuButton>
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>

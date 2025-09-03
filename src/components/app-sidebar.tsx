@@ -2,6 +2,8 @@
 
 import * as React from "react";
 
+import NavHome from "./nav-home";
+
 import { NavMain } from "@/components/nav-main";
 import { NavProjects } from "@/components/nav-projects";
 import { NavUser } from "@/components/nav-user";
@@ -13,8 +15,8 @@ import {
   SidebarHeader,
   SidebarRail,
 } from "@/components/ui/sidebar";
-// This is sample data.
 
+// This is sample data.
 const data = {
   user: {
     name: "shadcn",
@@ -38,86 +40,94 @@ const data = {
       plan: "Free",
     },
   ],
+  navHome: [
+    {
+      title: "Dashboard",
+      contentId: "dashboard",
+      icon: "Home",
+      isActive: true,
+    },
+  ],
+
   navMain: [
     {
       title: "Finance",
-      url: "#",
+      contentId: "finance",
       icon: "SquareTerminal",
-      isActive: true,
       items: [
         {
           title: "Transaction History",
-          url: "#",
+          contentId: "finance-transactions",
         },
         {
           title: "Starred",
-          url: "#",
+          contentId: "finance-starred",
         },
       ],
     },
     {
       title: "LoomiAI",
-      url: "#",
+      contentId: "loomiai",
       icon: "Bot",
       items: [
         {
           title: "Genesis",
-          url: "#",
+          contentId: "loomiai-genesis",
         },
         {
           title: "Explorer",
-          url: "#",
+          contentId: "loomiai-explorer",
         },
         {
           title: "Quantum",
-          url: "#",
+          contentId: "loomiai-quantum",
         },
       ],
     },
     {
       title: "Study",
-      url: "#",
+      contentId: "study",
       icon: "BookOpen",
       items: [
         {
           title: "Pomodoro",
-          url: "#",
+          contentId: "study-pomodoro",
         },
         {
           title: "Flashcards",
-          url: "#",
+          contentId: "study-flashcards",
         },
         {
           title: "Schedule",
-          url: "#",
+          contentId: "study-schedule",
         },
         {
           title: "To Do List",
-          url: "#",
+          contentId: "study-todo",
         },
       ],
     },
 
     {
       title: "More Features",
-      url: "#",
+      contentId: "settings",
       icon: "Settings2",
       items: [
         {
           title: "General",
-          url: "#",
+          contentId: "settings-general",
         },
         {
           title: "Team",
-          url: "#",
+          contentId: "settings-team",
         },
         {
           title: "Billing",
-          url: "#",
+          contentId: "settings-billing",
         },
         {
           title: "Limits",
-          url: "#",
+          contentId: "settings-limits",
         },
       ],
     },
@@ -125,31 +135,51 @@ const data = {
   projects: [
     {
       name: "Design Engineering",
-      url: "#",
+      contentId: "project-design",
       icon: "Frame",
     },
     {
       name: "Sales & Marketing",
-      url: "#",
+      contentId: "project-sales",
       icon: "PieChart",
     },
     {
       name: "Travel",
-      url: "#",
+      contentId: "project-travel",
       icon: "Map",
     },
   ],
 };
 
-export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
+export function AppSidebar({
+  activeContent,
+  setActiveContent,
+  ...props
+}: React.ComponentProps<typeof Sidebar> & {
+  activeContent: string;
+  setActiveContent: (content: string) => void;
+}) {
   return (
     <Sidebar collapsible="icon" {...props}>
       <SidebarHeader>
         <TeamSwitcher teams={data.teams} />
       </SidebarHeader>
       <SidebarContent>
-        <NavMain items={data.navMain} />
-        <NavProjects projects={data.projects} />
+        <NavHome
+          items={data.navHome}
+          activeContent={activeContent}
+          setActiveContent={setActiveContent}
+        />
+        <NavMain
+          items={data.navMain}
+          activeContent={activeContent}
+          setActiveContent={setActiveContent}
+        />
+        <NavProjects
+          projects={data.projects}
+          activeContent={activeContent}
+          setActiveContent={setActiveContent}
+        />
       </SidebarContent>
       <SidebarFooter>
         <NavUser user={data.user} />
